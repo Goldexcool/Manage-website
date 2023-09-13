@@ -458,6 +458,7 @@ li {
     display: flex;
     align-items: center;
     column-gap: .5rem;
+    position: relative;
 }
 .input-b input{
     padding: 10px 25px;
@@ -475,10 +476,22 @@ li {
     background-color: var(--BrightRed);
     text-align: center;
 }
+.errormess{
+    position: absolute;
+    margin-top: 4rem;
+    color: var(--BrightRed);
+    display: none;
+    font-size: 10px;
+    margin-right: 0px;
+}
+.errormess.error{
+    display: block;
+}
 .input_btn h1{
     font-size: 10px;
     color: var(--DarkGrayishBlue);
 }
+
 @media (max-width:480px) {
     /* #second_section{
         padding: 0 2rem;
@@ -812,5 +825,16 @@ li {
 
     #header {
         padding: 0 2rem;
+    }
+}
+@media (min-width: 1300px) and (max-width: 1919px) {
+    #header{
+        padding: 0 14rem;
+    }
+    #first_section{
+        padding: 0 14rem;
+    }
+    #second_section{
+        padding: 0 14rem;
     }
 }
